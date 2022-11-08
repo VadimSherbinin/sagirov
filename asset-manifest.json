@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/sagirov/static/css/main.62131c1c.css",
+    "main.js": "/sagirov/static/js/main.3f1a572b.js",
+    "static/media/background.png": "/sagirov/static/media/background.be44600ad13873808bd4.png",
+    "static/media/MuseoSansCyrl300.ttf": "/sagirov/static/media/MuseoSansCyrl300.f55cbd6c72bf488b5c7f.ttf",
+    "static/media/MuseoSansCyrl100.ttf": "/sagirov/static/media/MuseoSansCyrl100.4318e0a1d034eda1c606.ttf",
+    "static/media/MuseoSansCyrl700.ttf": "/sagirov/static/media/MuseoSansCyrl700.4407722f22c0457d4687.ttf",
+    "index.html": "/sagirov/index.html",
+    "main.62131c1c.css.map": "/sagirov/static/css/main.62131c1c.css.map",
+    "main.3f1a572b.js.map": "/sagirov/static/js/main.3f1a572b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.62131c1c.css",
+    "static/js/main.3f1a572b.js"
+  ]
+}
