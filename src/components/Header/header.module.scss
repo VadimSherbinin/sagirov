@@ -1,0 +1,209 @@
+.header {
+    background: rgb(21, 10, 1, 0.212);
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+
+    &::after {
+        content: "";
+        height: 1px;
+        background: rgb(61, 61, 61);
+        bottom: 0.2px;
+        z-index: -1;
+        width: 100%;
+        position: absolute;
+    }
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1170px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @media (max-width: 960px) {
+        padding: 0 50px;
+    }
+
+    @media (max-width: 620px) {
+        padding: 20px 20px;
+    }
+}
+
+.logo {
+    padding: 25px 18px 40px 26px;
+    position: relative;
+    background:
+        url(../../assets/icons/cornerBL.png) left 0px bottom 0px no-repeat,
+        url(../../assets/icons/cornerTR.png) right 0px top 0px no-repeat,
+        url(../../assets/icons/cornerBR.png) right 0px bottom 0px no-repeat,
+        url(../../assets/icons/cornerTL.png) left 0px top 0px no-repeat,
+    ;
+
+    &::after {
+        content: "";
+        height: 100%;
+        background: rgb(61, 61, 61);
+        right: 0px;
+        top: 0;
+        z-index: 0;
+        width: 1px;
+        position: absolute;
+        z-index: -1;
+
+        @media (max-width: 620px) {
+            display: none;
+        }
+    }
+
+    &::before {
+        content: "";
+        height: 100%;
+        background: rgb(61, 61, 61);
+        bottom: 0.2px;
+        z-index: 0;
+        width: 1px;
+        position: absolute;
+        left: 0;
+        z-index: -1;
+
+        @media (max-width: 620px) {
+            display: none;
+        }
+    }
+
+    @media (max-width: 620px) {
+        background: none;
+        padding: 0;
+    }
+}
+
+.links {
+    font-family: 'MuseoSansCyrl', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    display: flex;
+    gap: 45px;
+
+    :hover {
+        color: rgb(110, 107, 107);
+        position: relative;
+        transform: scale(1.1);
+        transition: 2s;
+
+        &::after {
+            content: "";
+            height: 1px;
+            width: 100%;
+            background: rgb(110, 107, 107);
+            position: absolute;
+            top: 22px;
+            left: 0;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: #fff;
+
+        @media (max-width: 960px) {
+            width: 100%;
+            font-size: 24px;
+            text-align: center;
+        }
+
+        @media (max-width: 620px) {
+            font-size: 18px;
+        }
+    }
+
+    @media (max-width: 960px) {
+        gap: 22px;
+        flex-direction: column;
+    }
+
+    @media (max-width: 960px) {
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        left: 0;
+        background: linear-gradient(rgb(21, 10, 1, 0.95) 60%, rgb(21, 10, 1, 0));
+        z-index: 2;
+        padding-top: 75px;
+        transition: .2s all linear;
+        text-align: center;
+    }
+}
+
+.burger {
+    width: 40px;
+    height: 28px;
+    position: relative;
+    gap: 5px;
+    display: block;
+
+    @media (max-width: 620px) {
+        width: 30px;
+        height: 20px;
+    }
+}
+
+.burgerLine {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: white;
+    position: absolute;
+    left: 0;
+
+    &:nth-child(1) {
+        top: 0;
+    }
+
+    &:nth-child(2) {
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    &:nth-child(3) {
+        bottom: 0;
+    }
+}
+
+.close {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 30;
+
+    @media (min-width: 960px) {
+        display: none;
+    }
+
+    @media (max-width: 620px) {
+        width: 20px;
+        height: 20px;
+    }
+
+    span {
+        display: block;
+        position: absolute;
+        background: white;
+        height: 2px;
+        width: 100%;
+        top: 50%;
+    }
+
+    :nth-child(1) {
+        transform: translateY(-50%) rotate(45deg);
+    }
+
+    :nth-child(2) {
+        transform: translateY(-50%) rotate(-45deg);
+    }
+}

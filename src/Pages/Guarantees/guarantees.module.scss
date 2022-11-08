@@ -1,0 +1,19 @@
+.guarantees {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'MuseoSansCyrl';
+    font-size: 28px;
+    font-weight: 700;
+    background: linear-gradient(to right, #ff3f04, #fff);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    @media (max-width: 620px) {
+        font-size: 14px;
+    }
+}

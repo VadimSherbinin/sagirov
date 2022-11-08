@@ -1,0 +1,16 @@
+.layout{
+    background: url('../../assets/images/background.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    width: 100% auto;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    
+    @media (max-width: 661px) {
+        overflow-x: hidden;
+        overflow-y: scroll;
+    }
+}

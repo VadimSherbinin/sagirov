@@ -1,0 +1,33 @@
+@font-face {
+  font-family: 'MuseoSansCyrl';
+  src: local('MuseoSansCyrl'), url(../fonts/MuseoSansCyrl100.ttf) format('truetype');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MuseoSansCyrl';
+  src: local('MuseoSansCyrl'), url(../fonts/MuseoSansCyrl300.ttf) format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'MuseoSansCyrl';
+  src: local('MuseoSansCyrl'), url(../fonts/MuseoSansCyrl700.ttf) format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+body {
+  margin: 0;
+  font-family: 'MuseoSansCyrl', sans-serif;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
